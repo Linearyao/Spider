@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import re
 
 link = """http://nebula-storm.blogchina.com/archive/201803_1.html"""
-headers = {'User-agent':'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'}
+headers = {'User-agent':headers}
 r = requests.get(link,headers = headers)
 soup = BeautifulSoup(r.text,"html.parser")
 print(soup)
