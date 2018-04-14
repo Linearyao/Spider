@@ -1,1 +1,7 @@
-
+import scrapy
+class BookSpider(scrapy.Spider):
+    name = "books"
+    start_url=[]
+    def parse(self,response):
+        for book in response.css('article.product_pod'):
+            name = book.xpath('')
